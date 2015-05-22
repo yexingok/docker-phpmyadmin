@@ -1,0 +1,10 @@
+set init
+
+#set httpd
+#    port 2812
+#    allow youruser:yourpass
+
+check process httpd with pidfile /var/run/httpd/httpd.pid
+    start program = "/sbin/service httpd start"
+    stop program = "/sbin/service httpd stop"
+
