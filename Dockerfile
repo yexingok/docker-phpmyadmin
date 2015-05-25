@@ -22,6 +22,7 @@ RUN  cd /var/www/html && \
 RUN chown -R apache.apache /var/www/html
 
 #APP daemon start config:
+ADD docker-scripts/php.ini  /etc/php.ini
 ADD docker-scripts/monitrc  /etc/monitrc
 ADD docker-scripts/start.sh /
 RUN chmod 600 /etc/monitrc && chmod +x /start.sh
