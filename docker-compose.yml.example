@@ -1,0 +1,16 @@
+phpmyadmin:
+    build: .
+    links: 
+        - mysql
+    restart: always
+    ports:
+        - "8888:80"
+mysql:
+    image: mysql:5.6
+    env_file:
+        - ./env_file
+    volumes:
+        - /var/lib/mysql
+    restart: always
+    ports:
+        - "3306:3306"
