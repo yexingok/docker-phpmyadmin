@@ -1,7 +1,7 @@
 From centos:centos6
 MAINTAINER yexing@edanzgroup.com
 
-ENV VERSION=4.4.7
+ENV VERSION=4.4.10
 
 #Base:
 RUN cp /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
