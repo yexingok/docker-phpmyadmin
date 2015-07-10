@@ -9,7 +9,7 @@ Docker
 make build
 
 2. Run it and tcp connect to mysql host www.mycompany.com
-make HOST=www.mycompany.com run
+make HOST=www.mycompany.com PORT=3306  run
 
 For more options: check the Makefile.
 Enjoy!
